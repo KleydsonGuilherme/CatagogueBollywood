@@ -1,0 +1,56 @@
+:root{
+    background-color: rgb(10, 34, 49);
+    color: white;
+    --height-show: 200px;
+}
+
+h1{
+    padding-left: 20px;
+}
+
+.movieList{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    overflow-x: scroll;
+    /*overflow-x: hidden;*/
+    margin-left: 20px;
+    white-space: nowrap;
+    max-width: 90%;
+}
+
+a{
+    width: 300px;
+    height: var(--height-show);
+    background-color: rgb(102, 102, 189);
+    margin-right: 2px;
+    margin-left: 2px;
+    }
+
+img{
+    width: 300px;
+    height: 100%;
+    max-height: var(--height-show);
+}
+
+.buttonsRL{
+    width: 30px;
+    height: var(--height-show);
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    opacity: 30%;
+}.buttonsRL:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+#buttonR{
+    margin-right: -30px;
+}
+#buttonL{
+    margin-left: -500px;
+}
