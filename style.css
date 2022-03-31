@@ -16,7 +16,7 @@ h1{
     /*overflow-x: hidden;*/
     margin-left: 20px;
     white-space: nowrap;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 a{
@@ -40,17 +40,25 @@ img{
     color: white;
     text-decoration: none;
     border: none;
-    display: inline-block;
-    position: relative;
-    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+        font-size: 16px;
     opacity: 30%;
 }.buttonsRL:hover{
     cursor: pointer;
     opacity: 70%;
 }
 #buttonR{
-    margin-right: -30px;
+    right: 0;
+    margin-right: 8px;
 }
 #buttonL{
-    margin-left: -500px;
+    left: 0;
+    margin-left: 28px;
 }

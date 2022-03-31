@@ -3,10 +3,18 @@ const buttonR = document.querySelector('#buttonR');
 const buttonL = document.querySelector('#buttonL');
 
 
-buttonR.addEventListener("onmouseenter",function (){
-    movieList.scrollLeft -=10;
+buttonR.addEventListener("click",function (){
+    movieList.scrollBy({
+        left: 200, behavior: 'smooth'
+    });
+    /*if(movieList.scrollLeft = 1000)
+    movieList.scrollLeft = 0;*/
 });
 
-buttonL.addEventListener("onmouseenter",function (){
-    movieList.scrollLeft +=10;
+buttonL.addEventListener("click",function (){
+    movieList.scrollBy({
+        left: -200, behavior: 'smooth'
+    });
 });
+
+
