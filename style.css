@@ -1,36 +1,42 @@
 :root{
-    background-color: rgb(10, 34, 49);
+    background-color: rgb(14,14,14);
     color: white;
     --height-show: 200px;
+    --padding-movie: 10px 0px 10px;
 }
 
 h1{
     padding-left: 20px;
+    font-size: 3vh;
+    margin-bottom: -1px;
 }
 
 .movieList{
     display: flex;
     justify-content:left;
     align-items: center;
-    overflow-x: scroll;
-    /*overflow-x: hidden;*/
+    overflow: hidden;
     margin-left: 20px;
     white-space: nowrap;
     max-width: 100%;
+    padding: var(--padding-movie);
 }
 
 a{
     width: 300px;
     height: var(--height-show);
-    background-color: rgb(102, 102, 189);
     margin-right: 2px;
     margin-left: 2px;
-    }
+}
 
 img{
     width: 300px;
     height: 100%;
-    max-height: var(--height-show);
+    transition: all 0.5s;
+    border-radius: 1%;
+}img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .buttonsRL{
@@ -40,15 +46,14 @@ img{
     color: white;
     text-decoration: none;
     border: none;
-
     display: flex;
     align-items: center;
     align-content: center;
     vertical-align: middle;
     justify-content: center;
     position: absolute;
-    z-index: 1000;
-        font-size: 16px;
+    z-index: 2;
+    font-size: 16px;
     opacity: 30%;
 }.buttonsRL:hover{
     cursor: pointer;

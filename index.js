@@ -4,16 +4,14 @@ const buttonL = document.querySelector('#buttonL');
 
 
 buttonR.addEventListener("click",function (){
-    movieList.scrollBy({
-        left: 200, behavior: 'smooth'
+        movieList.scrollBy({
+        left: 300, behavior: 'smooth'
     });
-    /*if(movieList.scrollLeft = 1000)
-    movieList.scrollLeft = 0;*/
 });
 
 buttonL.addEventListener("click",function (){
     movieList.scrollBy({
-        left: -200, behavior: 'smooth'
+        left: -300, behavior: 'smooth'
     });
 });
 
